@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots de objetos JSON deve corresponder ao snapshot do envelope de resposta da API 1`] = `
+{
+  "data": {
+    "email": "renan@example.com",
+    "id": 1,
+    "name": "Renan Pallin",
+    "preferences": {
+      "language": "pt-BR",
+      "notifications": true,
+      "theme": "dark",
+    },
+    "role": "editor",
+    "stats": {
+      "followersCount": 1337,
+      "postsCount": 42,
+    },
+  },
+  "meta": {
+    "requestId": "abc-123",
+    "version": "1.0",
+  },
+  "status": "success",
+  "timestamp": "2024-01-01T00:00:00.000Z",
+}
+`;
+
+exports[`Snapshots de objetos JSON deve corresponder ao snapshot do perfil do usuário 1`] = `
+{
+  "email": "renan@example.com",
+  "id": 1,
+  "name": "Renan Pallin",
+  "preferences": {
+    "language": "pt-BR",
+    "notifications": true,
+    "theme": "dark",
+  },
+  "role": "editor",
+  "stats": {
+    "followersCount": 1337,
+    "postsCount": 42,
+  },
+}
+`;
+
+exports[`Snapshots — Boas Práticas BOM: snapshot focado só na estrutura importante: estatisticas-do-usuario 1`] = `
+{
+  "followersCount": 1337,
+  "postsCount": 42,
+}
+`;
+
+exports[`Snapshots — Boas Práticas BOM: snapshot focado só na estrutura importante: preferencias-do-usuario 1`] = `
+{
+  "language": "pt-BR",
+  "notifications": true,
+  "theme": "dark",
+}
+`;
+
+exports[`Snapshots — Boas Práticas RUIM: snapshot de um objeto enorme é difícil de revisar: perfil-completo 1`] = `
+{
+  "email": "renan@example.com",
+  "id": 1,
+  "name": "Renan Pallin",
+  "preferences": {
+    "language": "pt-BR",
+    "notifications": true,
+    "theme": "dark",
+  },
+  "role": "editor",
+  "stats": {
+    "followersCount": 1337,
+    "postsCount": 42,
+  },
+}
+`;

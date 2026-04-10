@@ -1,0 +1,20 @@
+{
+  "name": "05-supertest-api",
+  "version": "1.0.0",
+  "description": "Módulo 5 — Testes de API com Supertest",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/supertest": "^7.0.0",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

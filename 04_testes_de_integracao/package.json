@@ -1,0 +1,11 @@
+{
+  "name": "04-testes-de-integracao",
+  "version": "1.0.0",
+  "description": "Módulo 4 — Testes de Integração com banco de dados real (node:sqlite)",
+  "private": true,
+  "scripts": {
+    "test": "NODE_OPTIONS='--no-warnings=ExperimentalWarning' jest",
+    "test:watch": "NODE_OPTIONS='--no-warnings=ExperimentalWarning' jest --watch",
+    "test:coverage": "NODE_OPTIONS='--no-warnings=ExperimentalWarning' jest --coverage"
+  }
+}

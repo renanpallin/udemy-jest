@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button — Testes de Snapshot deve renderizar a variante danger corretamente 1`] = `
+<button
+  className="btn btn-danger"
+  disabled={false}
+>
+  Deletar
+</button>
+`;
+
+exports[`Button — Testes de Snapshot deve renderizar o botão primário corretamente 1`] = `
+<button
+  className="btn btn-primary"
+  disabled={false}
+>
+  Clique aqui
+</button>
+`;
+
+exports[`Button — Testes de Snapshot deve renderizar o estado desabilitado corretamente 1`] = `
+<button
+  className="btn btn-primary"
+  disabled={true}
+>
+  Enviar
+</button>
+`;
+
+exports[`UserCard — Testes de Snapshot deve renderizar o card com avatar 1`] = `
+<div
+  className="user-card"
+>
+  <img
+    alt="Renan Pallin's avatar"
+    src="https://example.com/avatar.jpg"
+  />
+  <div
+    className="user-card__info"
+  >
+    <h2
+      className="user-card__name"
+    >
+      Renan Pallin
+    </h2>
+    <p
+      className="user-card__email"
+    >
+      renan@example.com
+    </p>
+    <span
+      className="user-card__role"
+    >
+      Admin
+    </span>
+  </div>
+</div>
+`;
+
+exports[`UserCard — Testes de Snapshot deve renderizar o card sem avatar 1`] = `
+<div
+  className="user-card"
+>
+  <div
+    className="user-card__info"
+  >
+    <h2
+      className="user-card__name"
+    >
+      Renan Pallin
+    </h2>
+    <p
+      className="user-card__email"
+    >
+      renan@example.com
+    </p>
+    <span
+      className="user-card__role"
+    >
+      Editor
+    </span>
+  </div>
+</div>
+`;

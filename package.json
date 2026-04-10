@@ -1,0 +1,35 @@
+{
+  "name": "jest-course",
+  "version": "1.0.0",
+  "description": "Repositório do curso completo de Jest com TypeScript",
+  "private": true,
+  "workspaces": [
+    "05_testes_avancados_e_qualidade/snapshot-app-react",
+    "05_testes_avancados_e_qualidade/supertest-api"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:m1": "jest --config 01_fundamentos_e_matchers/jest.config.ts",
+    "test:m2": "jest --config 02_testes_assincronos/jest.config.ts",
+    "test:m3": "jest --config 03_mocks/jest.config.ts",
+    "test:m4": "NODE_OPTIONS='--no-warnings=ExperimentalWarning' jest --config 04_testes_de_integracao/jest.config.ts",
+    "test:m5:snapshot": "npm test -w 05-snapshot-app-react",
+    "test:m5:api": "npm test -w 05-supertest-api"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.0.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
